@@ -7,3 +7,7 @@ export const register = (data) => {
 export const login = (data) => {
   return axiosClient.post("/auth/login", data);
 };
+
+export const getCurrentUser = () => {
+  return axiosClient.get("/auth/me");
+};
